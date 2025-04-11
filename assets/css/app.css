@@ -1,3 +1,9 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@theme static {
+
+    --ui-primary: oklch(67.3% .182 276.935);
+    
+}
+

@@ -7,12 +7,12 @@
             to: '/',
         },
         {
-            label: 'About',
-            to: '/about',
-        },
-        {
             label: 'Contact',
             to: '/contact',
+        },
+        {
+            label: 'Login',
+            to: '/login',
         },
     ]);
 
@@ -29,10 +29,10 @@
 </script>
 
 <template>
-    <header class="w-full flex justify-between">
+    <header class="w-full flex justify-between bg-(--ui-bg)/75 backdrop-blur border-b border-(--ui-border) h-(--ui-header-height) sticky top-0">
         <div class="flex flex-row justify-between max-w-7xl w-full mx-auto p-5">
             <div class="logo flex items-center">
-                <h1 class="text-xl font-bold">Nust Dashboard</h1>
+                <h1 class="text-xl font-bold">Nuxt Dashboard</h1>
             </div>
             <div class="flex flex-row items-center gap-4">
                 <UNavigationMenu :items="items" class="flex" />
