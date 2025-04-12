@@ -1,9 +1,12 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme static {
-
+.light, :root {
     --ui-primary: oklch(67.3% .182 276.935);
-    
+    --ui-border: var(--ui-color-neutral-300);
+}
+
+.dark {
+    --ui-border: var(--ui-color-neutral-600);
 }
 

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+    useSeoMeta({
+        title: 'Contact | Nuxt Starter Dashboard',
+    })
+
     definePageMeta({
         layout: 'default',
     })

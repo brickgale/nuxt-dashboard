@@ -2,6 +2,10 @@
     import * as v from 'valibot'
     import type { FormSubmitEvent } from '@nuxt/ui'
 
+    useSeoMeta({
+        title: 'Login | Nuxt Starter Dashboard',
+    })
+
     definePageMeta({
         layout: 'default',
     })

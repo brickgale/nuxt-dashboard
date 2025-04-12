@@ -1,5 +1,10 @@
 <script setup lang="ts">
+    useSeoMeta({
+        title: 'Nuxt Starter Dashboard',
+    })
+
     definePageMeta({
+        name: 'Dashboard',
         layout: 'default',
     })
 </script>
