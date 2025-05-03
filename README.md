@@ -2,20 +2,13 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+## Getting Started
 
-Make sure to install dependencies:
-
-```bash
-npm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+First time running dev environment:
 
 ```bash
-npm run dev
+docker-compose up --build
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+Open http://localhost:3000 with your browser to see the result.
