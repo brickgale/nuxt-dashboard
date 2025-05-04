@@ -29,11 +29,15 @@ export const tickets = pgTable('tickets', {
   quantity: integer('quantity'),
 });
 
+export const statusEnum = pgEnum('status', ['confirmed', 'cancelled', 'pending']);
+
 export const registrations = pgTable('registrations', {
   id: serial('id').primaryKey(),
   userId: integer('user_id').references(() => users.id),
   eventId: integer('event_id').references(() => events.id),
   ticketId: integer('ticket_id').references(() => tickets.id),
   registrationDate: timestamp('registration_date').defaultNow(),
-  status: pgEnum('status', ['confirmed', 'cancelled', 'pending'])('status'),
+  status: statusEnum('status'),
 });
+
+export const schema = { users, events, tickets, registrations };

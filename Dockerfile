@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Expose the Nuxt Port
-EXPOSE 3000 
+EXPOSE 3000
 
 # Start the application
 CMD ["npm", "run", "dev"]
